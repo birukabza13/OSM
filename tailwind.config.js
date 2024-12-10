@@ -1,17 +1,25 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+      "./index.html",
+      "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {
-      colors: {
-        primary: "#07080D",
-        secondary: "#06E1E4",
+      extend: {
+          fontFamily: {
+              mainFont: ['Montserrat', 'sans-serif'], 
+              secondaryFont: ['Open Sans', 'sans-serif'], 
+          },
+          colors: {
+            primaryColor: "#56823B",
+            primaryColorLight: "#9FD086",
+            secondaryColor: "#673B82",
+
+          },
+          textColor: {
+            DEFAULT: '#000000', 
+          },
       },
-    },
   },
   plugins: [],
-}
-
+};
